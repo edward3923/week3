@@ -31,8 +31,12 @@ document.addEventListener('DOMContentLoaded', async function() {
 
   // PART 1
   // Figure out how products there are, and store that number in memory
+  let numProducts = data.products.length
+  console.log(numProducts)
 
   // Figure out how promotions there are, and store that number in memory
+  let numPromotions = data.promotions.length
+  console.log(numPromotions)
 
   // Write the number of products to the JavaScript console
 
@@ -40,8 +44,10 @@ document.addEventListener('DOMContentLoaded', async function() {
 
   // PART 2
   // Store the first product in memory
+  let product1 = data.products[0]
 
   // Write the first product to the JavaScript console, on three separate lines
+  console.log(product1.name)
 
   // Repeat for the 2nd and 3rd products
   // Store the second product in memory
@@ -59,7 +65,11 @@ document.addEventListener('DOMContentLoaded', async function() {
 
   // Use the random integer to grab a promotion from the Array of promotions
   // and store it in memory
-  
+  randomNumber = getRandomInt(10) - 1
+  console.log(randomNumber)
+  let selectPromo = data.promotions[randomNumber]
+  console.log(selectPromo)
+  console.log(`🤑`)
   // Figure out which emoji should be displayed, store it in memory (you will need
   // an empty variable for this before you write any conditional)
 
